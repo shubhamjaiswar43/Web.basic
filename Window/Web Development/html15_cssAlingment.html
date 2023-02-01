@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        /* *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        } */
+        /*width: 900px;
+            border: 3px solid purple;
+            background-color: rgb(250, 226, 205);
+            margin: 33px auto;*/
+        #container{
+            width: 900px;
+            border: 3px solid purple;
+            background-color: rgb(250, 226, 205);
+            margin: 33px auto;
+        }
+        .item{
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(248, 238, 238);
+        }
+        #fruit{
+            float: left; /*float is use to float the element in page as left/right side with given width*/
+            width: 48%;
+        }
+        #computer{
+            float: left;
+            width: 48%;
+        }
+        #stationay{
+            clear:both;/*clear is given to not to come any floating element in this element of given width*/
+            width: 100%;
+        }
+        p{
+            /* text-align: left;
+            text-align: right;
+            text-align: center; */
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item" id="fruit">
+            <p id="fruitPara">
+                <strong>Fruits</strong><br>
+                <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ratione sed ipsa dicta ea quod voluptates magni sapiente voluptate, corporis, quaerat explicabo error aspernatur cumque. Deleniti voluptates aliquam odio delectus et facilis, eaque eligendi!</em>
+            </p>
+        </div>
+        <div class="item" id="computer">
+            <p id="computerPara">
+                <strong>Computer</strong><br>
+                <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ratione sed ipsa dicta ea quod voluptates magni sapiente voluptate, corporis, quaerat explicabo error aspernatur cumque. Deleniti voluptates aliquam odio delectus et facilis, eaque eligendi!</em>
+            </p>
+        </div>
+        <div class="item" id="stationary">
+            <p id="stationaryPara">
+                <strong>Stationary</strong><br>
+                <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ratione sed ipsa dicta ea quod voluptates magni sapiente voluptate, corporis, quaerat explicabo error aspernatur cumque. Deleniti voluptates aliquam odio delectus et facilis, eaque eligendi!</em>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

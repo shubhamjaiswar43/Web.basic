@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input</title>
+</head>
+<body>
+    <form action="backend.py"> <!--action for take the input in which backend file-->
+        <h3>My Form</h3>
+        <div>
+            <label for="name">Name : </label> <!-- "for" is for id of input,and the strings written under label will shown before input-->
+            <input type="text" name="myName" id="name"><!--name is for taking the input in a variable under backend-->
+        </div>
+        <br>
+        <div>
+            <label for="gender">Gender : </label>
+            <br>Male : <input type="radio" name="myGender" id="gender">
+            Female : <input type="radio" name="myGender" id="gender">
+            Others : <input type="radio" name="myGender" id="gender">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email : </label>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br> 
+        <div>
+            <label for="date">Date : </label>
+            <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="role">Role : </label>
+            <input type="text" name="myRole" id="role">
+        </div>
+        <br>
+        <div>
+            <label for="eligiblity">Are You Eligible : </label>
+            <input type="checkbox" name="eligiblity" id="eligiblity" checked>
+        </div>
+        <br>
+        <div>
+            <label for="interest">How Much Do You Have Interest in this ? <br></label>
+            <input type="range" name="interest" id="interest">
+        </div>
+        <br>
+        <div>
+            <label for="favColor">What is your favourite color ? <br></label>
+            <input type="color" name="favColor" id="favColor" >
+        </div>
+        <br>
+        <div>
+            <label for="bonus">Bonus : </label>
+            <input type="number" name="myBonus" id="bonus">
+        </div>
+        <br>
+        <div>
+            <label for="info">Write About Yourself <br></label>
+            <textarea name="myInfo" id="info" cols="100" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Which Car do you have ?</label>
+            <select name="car" id="car">
+                <option value="no">Not Present</option>
+                <option value="swf">Swift</option>
+                <option value="ind">Indica</option>
+                <option value="others">Others
+                    <input type="text" value="for others only">
+                </option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+        </div>
+        <br>
+        <div>
+            <input type="reset">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Bg</title>
+    <style>
+        #fp{
+            color: red;
+            background-color: rgb(240, 252, 179);
+            height: 500px;
+            width: 700px;
+            font-weight: bold;
+            text-indent: 15px;/*it is used to indent the in para by 2px*/
+            /* margin:20px;this will give a empty space of 10px around the border from outside */
+            /* padding: 20px;this will give a empty space of 20px around the border from inside */
+            /* border-width: 2px;
+            border-style:solid ;
+            border-color: darkblue; */
+            border:2px solid darkblue;/*This is same as three line above*/
+            background-image: url('htmlLogo.png');/*For Bg Image*/
+            background-repeat: no-repeat;/*("repeat-x,repeat-y,no-repeat")==> we can use this three*/
+            background-position: center center;/*First Word("centre","top","bottom"),Second Word("centre","top","bottom")*/
+            border-radius: 20px;/*for curving corner*/
+            /* border-top-left-radius: 2px; like this we can also curve corner at only one coner */
+
+        }
+        #sp{
+            color:green;
+            text-indent: 290px;
+            background-color: rgb(252, 179, 179);
+            height: 500px;
+            width: 700px;
+            font-weight: bold;
+            border:5px solid red;
+            background-image: url('htmlLogo.png');
+            background-repeat: repeat-y;
+            background-position: center left;
+        }
+        #tp{
+            color: yellow;
+            background-color: red;
+            height: 500px;
+            width: 700px;
+            font-weight: bold;
+            font-size: 25px;
+            text-indent: 25px;
+            border:2px solid darkblue;
+            background-image: url('htmlLogo.png');
+            background-repeat: repeat-x;
+            background-position: bottom right;
+
+        }
+    </style>
+</head>
+<body>
+    <p id="fp">First Paragraph</p>
+    <p id="sp">Second Paragraph</p>
+    <p id="tp">Third Paragraph</p>
+</body>
+</html>

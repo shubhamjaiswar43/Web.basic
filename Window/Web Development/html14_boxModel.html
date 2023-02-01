@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /*"*" is change in all element*/
+        /*
+        Padding : free space between text and border
+        Margin : free space outside body
+        */
+        *{
+            box-sizing: border-box;/*This will keep the width constant even if we change the padding*/
+        }
+        div{
+            color:#fff;
+            font-weight: bolder;
+            font-size: 80px;
+            border: 5px solid green;
+            background-color: #000;
+            width: 2000px;
+            padding:50px;
+            margin:100px;
+            border-radius: 30px;
+            /*
+            we can also set padding/margin different for different side;
+            padding-top:value;
+            padding-right:value;
+            padding-bottom:value;
+            padding-left:value;
+            ---shortcut-for above four line---
+            padding: top right bottom left;
+            ---if y=top=bottom,x=right=left---
+            padding:y x;   
+            */
+        }
+        p{
+            color:yellow;
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+<body style="background-color: #ff9eea;">
+    
+    <div>
+        <h4>First Heading</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis a illo voluptas, reprehenderit modi doloribus molestiae, qui cumque placeat, debitis quibusdam voluptatibus velit!</p>
+    </div>
+
+    <div>
+        <h4>Second Heading</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis a illo voluptas, reprehenderit modi doloribus molestiae, qui cumque placeat, debitis quibusdam voluptatibus velit!</p>
+    </div>
+
+    <div>
+        <h4>Third Heading</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis a illo voluptas, reprehenderit modi doloribus molestiae, qui cumque placeat, debitis quibusdam voluptatibus velit!</p>
+    </div>
+</body>
+</html>
