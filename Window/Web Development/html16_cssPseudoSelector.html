@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psedo Selectors and More Designing</title>
+    <style>
+        /*hover =>> style written in this will be implemented after putting cursor in it*/
+        .container{
+            border: 3px solid red;
+            background-color: rgb(185, 232, 161);
+            padding:34px;
+            margin: auto;
+            width:666px;
+
+        }
+        a{
+            text-decoration: none;/*This remove under line*/
+        }
+        a:hover{
+            background-color: red;
+            font-style: italic;
+            color:rgb(60, 0, 255);
+            border-radius: 10px;
+        }
+        a:visited{
+            background-color: orange;
+            font-weight: bold;
+        }
+        button:hover{
+            background-color: blue;
+            font-size: large;
+            color:red;
+            border-radius: 10px;
+        }
+        .b1{
+            color:black;
+            border :none;/*Remove Border*/
+            background-color: #fff;
+            font-weight: bolder;
+            cursor: pointer;
+            padding:16px;
+            margin:0px 10px;
+        }
+        div:hover{
+            background-color: rgb(141, 141, 179);
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This Is My Heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, incidunt. Deserunt sit similique maxime autem aut vero amet, assumenda cum possimus facere consequuntur, esse placeat magnam? Autem dolores commodi exercitationem, repellendus similique molestias pariatur.</p>
+        <a href="https://google.com" class="b1" target="_blank">Click Here</a>
+        <button class="b1">Contact Us</button>
+    </div>
+</body>
+</html>
